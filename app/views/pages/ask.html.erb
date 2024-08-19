@@ -1,9 +1,19 @@
-<h1>Questions?</h1>
+<h1>Stupid Coaching</h1>
 
-<form action="/answer" data-turbo="false">
-  <fieldset>
-    <legend>Send your coach a question:</legend>
-    <input type="text" name="question">
-    <input type="submit" value="Ask!">
-  </fieldset>
-</form>
+<div class="question">
+  <h2>Questions?</h2>
+
+  <div class="card">
+    <form action="/answer" data-turbo="false">
+      <fieldset>
+        <legend class="form_legend">Send your coach a question:</legend>
+        <input type="text" name="question" class="form_input">
+        <input type="submit" value="Ask!" class="form_btn">
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<div class=links>
+  <%= link_to "Back to Homepage", root_path, class:"btn" %>
+</div>
